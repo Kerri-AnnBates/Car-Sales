@@ -1,7 +1,9 @@
 // action types
 export const ADD_FEATURE = 'ADD_FEATURE';
+export const REMOVE_FEATURE = 'REMOVE_FEATURE';
 
-// Action creator
+// Action creators
+// add item
 export const addFeature = (feature) => {
     console.log(feature);
     return {
@@ -10,3 +12,10 @@ export const addFeature = (feature) => {
     }
 }
 
+// Remove item
+export const removeFeature = (id) => {
+    return {
+        type: REMOVE_FEATURE,
+        payload: id
+    }
+}
